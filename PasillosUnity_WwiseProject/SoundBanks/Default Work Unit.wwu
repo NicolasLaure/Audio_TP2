@@ -6,6 +6,7 @@
 				<SoundBank Name="main" ID="{88974886-CEA0-4B72-83D6-7357CEB63673}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Ambiente" ID="{DFEFDA85-2857-41EC-9681-2C5559BB9220}" WorkUnitID="{D9C0475A-1EAA-46EF-B8D4-FE6838B6C00B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="BallBounce" ID="{3458708D-A523-4AD9-9AEA-08A8BBF70C24}" WorkUnitID="{D9C0475A-1EAA-46EF-B8D4-FE6838B6C00B}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

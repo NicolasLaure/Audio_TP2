@@ -35,7 +35,19 @@
 						<ActiveSource Name="ambientePasillos" ID="{76C09648-A7B3-4D9E-851C-F92EF6DE8B16}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="CuboIn" ID="{6B697CD3-1AA7-47C7-A18E-703C8FA6B4D2}" ShortID="546443224">
+				<Sound Name="BallBounce" ID="{6B697CD3-1AA7-47C7-A18E-703C8FA6B4D2}" ShortID="546443224">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-20</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{A69CB27A-155B-428C-B8DC-0135874E0CFB}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5A0F21F-2C60-4B7B-9715-74CEE98AA26E}"/>
