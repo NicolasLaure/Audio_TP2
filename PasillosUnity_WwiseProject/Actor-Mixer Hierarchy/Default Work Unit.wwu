@@ -1,6 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{531BD1ED-C09A-49A3-990C-E53880CDC487}" SchemaVersion="119">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{531BD1ED-C09A-49A3-990C-E53880CDC487}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{531BD1ED-C09A-49A3-990C-E53880CDC487}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="ambientePasillos" ID="{66C177E7-681C-401A-8A69-B7DEFE4D3198}" ShortID="625093015">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5A0F21F-2C60-4B7B-9715-74CEE98AA26E}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ED09DB73-D2AE-48CD-9176-834CB68201A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="ambientePasillos" ID="{76C09648-A7B3-4D9E-851C-F92EF6DE8B16}">
+							<PropertyList>
+								<Property Name="CrossfadeDuration" Type="Real64" Value="500"/>
+								<Property Name="FadeInDuration" Type="Real64" Value="1.81263616557734"/>
+								<Property Name="LoopBegin" Type="Real64" Value="2.01089324618736"/>
+								<Property Name="LoopEnd" Type="Real64" Value="22.6296296296296"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>ambientePasillos.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="656579371"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="ambientePasillos" ID="{76C09648-A7B3-4D9E-851C-F92EF6DE8B16}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="CuboIn" ID="{6B697CD3-1AA7-47C7-A18E-703C8FA6B4D2}" ShortID="546443224">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5A0F21F-2C60-4B7B-9715-74CEE98AA26E}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ED09DB73-D2AE-48CD-9176-834CB68201A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="CuboIn" ID="{9DB7C797-398A-42C1-9F87-E6BCFC561A5A}">
+							<Language>SFX</Language>
+							<AudioFile>CuboIn.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="333857835"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="CuboIn" ID="{9DB7C797-398A-42C1-9F87-E6BCFC561A5A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="electricidada_01" ID="{960E94D3-1DCD-4C67-A7D4-D65CAA29FC36}" ShortID="66766214">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5A0F21F-2C60-4B7B-9715-74CEE98AA26E}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ED09DB73-D2AE-48CD-9176-834CB68201A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="electricidada_01" ID="{93A651D3-A570-4EB7-9089-1B7A168D108F}">
+							<Language>SFX</Language>
+							<AudioFile>electricidada_01.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="464318873"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="electricidada_01" ID="{93A651D3-A570-4EB7-9089-1B7A168D108F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="electricidada_02" ID="{D383E9E9-A208-4983-8B34-8C7934AFCFD7}" ShortID="775533342">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5A0F21F-2C60-4B7B-9715-74CEE98AA26E}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ED09DB73-D2AE-48CD-9176-834CB68201A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="electricidada_02" ID="{4B4AAF85-18A3-4164-A67A-C5B145490690}">
+							<Language>SFX</Language>
+							<AudioFile>electricidada_02.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="65104089"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="electricidada_02" ID="{4B4AAF85-18A3-4164-A67A-C5B145490690}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="electricidada_03" ID="{95F24E44-821D-4188-BA7D-45AC132143BF}" ShortID="1027289187">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5A0F21F-2C60-4B7B-9715-74CEE98AA26E}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ED09DB73-D2AE-48CD-9176-834CB68201A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="electricidada_03" ID="{2CECEC19-9799-4389-BC2E-9BB8F050F65C}">
+							<Language>SFX</Language>
+							<AudioFile>electricidada_03.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="336344601"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="electricidada_03" ID="{2CECEC19-9799-4389-BC2E-9BB8F050F65C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
