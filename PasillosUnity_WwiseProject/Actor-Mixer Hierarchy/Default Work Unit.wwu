@@ -168,6 +168,61 @@
 						<ActiveSource Name="CuboIn" ID="{9DB7C797-398A-42C1-9F87-E6BCFC561A5A}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="InBox" ID="{D0690A6A-1315-4668-8D9B-319A067D9DBE}" ShortID="271264671">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{0AF67A64-AED2-437C-AA38-19909A1A582C}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="15"/>
+											<Property Name="Min" Type="Real64" Value="-21"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{4E39EBFD-4EA7-40C4-99D3-1F2D4C2FA4E0}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="707"/>
+											<Property Name="Min" Type="Real64" Value="-960"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5A0F21F-2C60-4B7B-9715-74CEE98AA26E}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ED09DB73-D2AE-48CD-9176-834CB68201A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="InBox" ID="{5496BED5-9AB0-4598-9848-E2DFE995C98C}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.723232052347877"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.369651937866693"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>InBox.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1045388105"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="InBox" ID="{5496BED5-9AB0-4598-9848-E2DFE995C98C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

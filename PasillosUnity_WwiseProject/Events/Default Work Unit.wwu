@@ -105,6 +105,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_InBox" ID="{8CA6A848-E95C-43DC-A0E6-02A64AB17BE3}">
+					<ChildrenList>
+						<Action Name="" ID="{736ED839-173D-4BEA-82BC-2D0823213790}" ShortID="200496376">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="InBox" ID="{D0690A6A-1315-4668-8D9B-319A067D9DBE}" WorkUnitID="{531BD1ED-C09A-49A3-990C-E53880CDC487}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

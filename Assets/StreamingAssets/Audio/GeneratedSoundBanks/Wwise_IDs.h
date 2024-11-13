@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID AMBIENTE = 4095160060U;
         static const AkUniqueID BALLBOUNCE = 3361201910U;
         static const AkUniqueID PLAY_ELECTRICALSOUND = 3046360905U;
+        static const AkUniqueID PLAY_INBOX = 2887629234U;
         static const AkUniqueID PLAY_LANDING = 2323405115U;
         static const AkUniqueID PLAY_PLAYERCROUCH = 1883544455U;
         static const AkUniqueID PLAY_PLAYERJUMP = 3817990921U;

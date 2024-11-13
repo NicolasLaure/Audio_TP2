@@ -6,6 +6,7 @@
 				<SoundBank Name="main" ID="{88974886-CEA0-4B72-83D6-7357CEB63673}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Ambiente" ID="{DFEFDA85-2857-41EC-9681-2C5559BB9220}" WorkUnitID="{D9C0475A-1EAA-46EF-B8D4-FE6838B6C00B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_InBox" ID="{8CA6A848-E95C-43DC-A0E6-02A64AB17BE3}" WorkUnitID="{D9C0475A-1EAA-46EF-B8D4-FE6838B6C00B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_VideoPlayerEffect" ID="{B3DD1A30-9EEE-4416-80C0-C5CCC4F5E5CC}" WorkUnitID="{D9C0475A-1EAA-46EF-B8D4-FE6838B6C00B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_ElectricalSound" ID="{34F7EC58-3934-4720-AB2E-98CBA6C7AF60}" WorkUnitID="{D9C0475A-1EAA-46EF-B8D4-FE6838B6C00B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_PlayerSteps" ID="{0B8B3E60-D67F-48B5-B4E4-F5C7A1A67906}" WorkUnitID="{D9C0475A-1EAA-46EF-B8D4-FE6838B6C00B}" Origin="Manual" Filter="7"/>
