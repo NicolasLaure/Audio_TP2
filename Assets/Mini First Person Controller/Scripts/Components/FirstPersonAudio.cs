@@ -6,56 +6,35 @@ public class FirstPersonAudio : MonoBehaviour
     public FirstPersonMovement character;
     public GroundCheck groundCheck;
 
-    [Header("Step")]
-    public AudioSource stepAudio;
-    public AudioSource runningAudio;
     [Tooltip("Minimum velocity for moving audio to play")]
     /// <summary> "Minimum velocity for moving audio to play" </summary>
     public float velocityThreshold = .01f;
     Vector2 lastCharacterPosition;
     Vector2 CurrentCharacterPosition => new Vector2(character.transform.position.x, character.transform.position.z);
 
-    [Header("Landing")]
-    public AudioSource landingAudio;
-    public AudioClip[] landingSFX;
+    [SerializeField] private Jump jump;
+    [SerializeField] private Crouch crouch;
 
-    [Header("Jump")]
-    public Jump jump;
-    public AudioSource jumpAudio;
-    public AudioClip[] jumpSFX;
+    [SerializeField] private AK.Wwise.Event stepsStartEvent;
+    [SerializeField] private AK.Wwise.Event stepsStopEvent;
+    [SerializeField] private AK.Wwise.Event crouchEvent;
+    [SerializeField] private AK.Wwise.Event jumpEvent;
+    [SerializeField] private AK.Wwise.Event landEvent;
 
-    [Header("Crouch")]
-    public Crouch crouch;
-    public AudioSource crouchStartAudio, crouchedAudio, crouchEndAudio;
-    public AudioClip[] crouchStartSFX, crouchEndSFX;
 
-    AudioSource[] MovingAudios => new AudioSource[] { stepAudio, runningAudio, crouchedAudio };
-
+    private bool _stepsPlaying;
 
     void Reset()
     {
         // Setup stuff.
         character = GetComponentInParent<FirstPersonMovement>();
         groundCheck = (transform.parent ?? transform).GetComponentInChildren<GroundCheck>();
-        stepAudio = GetOrCreateAudioSource("Step Audio");
-        runningAudio = GetOrCreateAudioSource("Running Audio");
-        landingAudio = GetOrCreateAudioSource("Landing Audio");
 
         // Setup jump audio.
         jump = GetComponentInParent<Jump>();
-        if (jump)
-        {
-            jumpAudio = GetOrCreateAudioSource("Jump audio");
-        }
 
         // Setup crouch audio.
         crouch = GetComponentInParent<Crouch>();
-        if (crouch)
-        {
-            crouchStartAudio = GetOrCreateAudioSource("Crouch Start Audio");
-            crouchStartAudio = GetOrCreateAudioSource("Crouched Audio");
-            crouchStartAudio = GetOrCreateAudioSource("Crouch End Audio");
-        }
     }
 
     void OnEnable() => SubscribeToEvents();
@@ -70,54 +49,40 @@ public class FirstPersonAudio : MonoBehaviour
         {
             if (crouch && crouch.IsCrouched)
             {
-                SetPlayingMovingAudio(crouchedAudio);
-            }
-            else if (character.IsRunning)
-            {
-                SetPlayingMovingAudio(runningAudio);
+                crouchEvent.Post(gameObject);
             }
             else
             {
-                SetPlayingMovingAudio(stepAudio);
+                if (!_stepsPlaying)
+                {
+                    stepsStartEvent.Post(gameObject);
+                    _stepsPlaying = true;
+                }
             }
         }
         else
         {
-            SetPlayingMovingAudio(null);
+            if (_stepsPlaying)
+            {
+                stepsStopEvent.Post(gameObject);
+                _stepsPlaying = false;
+            }
         }
 
-        // Remember lastCharacterPosition.
         lastCharacterPosition = CurrentCharacterPosition;
     }
 
 
-    /// <summary>
-    /// Pause all MovingAudios and enforce play on audioToPlay.
-    /// </summary>
-    /// <param name="audioToPlay">Audio that should be playing.</param>
-    void SetPlayingMovingAudio(AudioSource audioToPlay)
-    {
-        // Pause all MovingAudios.
-        foreach (var audio in MovingAudios.Where(audio => audio != audioToPlay && audio != null))
-        {
-            audio.Pause();
-        }
-
-        // Play audioToPlay if it was not playing.
-        if (audioToPlay && !audioToPlay.isPlaying)
-        {
-            audioToPlay.Play();
-        }
-    }
-
     #region Play instant-related audios.
-    void PlayLandingAudio() => PlayRandomClip(landingAudio, landingSFX);
-    void PlayJumpAudio() => PlayRandomClip(jumpAudio, jumpSFX);
-    void PlayCrouchStartAudio() => PlayRandomClip(crouchStartAudio, crouchStartSFX);
-    void PlayCrouchEndAudio() => PlayRandomClip(crouchEndAudio, crouchEndSFX);
+
+    void PlayLandingAudio() => landEvent.Post(gameObject);
+    void PlayJumpAudio() => jumpEvent.Post(gameObject);
+    void PlayCrouchStartAudio() => crouchEvent.Post(gameObject);
+
     #endregion
 
     #region Subscribe/unsubscribe to events.
+
     void SubscribeToEvents()
     {
         // PlayLandingAudio when Grounded.
@@ -133,7 +98,6 @@ public class FirstPersonAudio : MonoBehaviour
         if (crouch)
         {
             crouch.CrouchStart += PlayCrouchStartAudio;
-            crouch.CrouchEnd += PlayCrouchEndAudio;
         }
     }
 
@@ -152,12 +116,13 @@ public class FirstPersonAudio : MonoBehaviour
         if (crouch)
         {
             crouch.CrouchStart -= PlayCrouchStartAudio;
-            crouch.CrouchEnd -= PlayCrouchEndAudio;
         }
     }
+
     #endregion
 
     #region Utility.
+
     /// <summary>
     /// Get an existing AudioSource from a name or create one if it was not found.
     /// </summary>
@@ -193,5 +158,6 @@ public class FirstPersonAudio : MonoBehaviour
         audio.clip = clip;
         audio.Play();
     }
-    #endregion 
+
+    #endregion
 }

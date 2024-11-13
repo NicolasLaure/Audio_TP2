@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c02d46656a2c0c4ca7f81e0a081a31a, type: 3}
+  m_Name: B096401E-867B-4CE4-9C55-6D638D5ED64D
+  m_EditorClassIdentifier: 
+  objectName: Play_PlayerJump
+  id: 3817990921
+  guid: B096401E-867B-4CE4-9C55-6D638D5ED64D

@@ -35,12 +35,93 @@
 						<ActiveSource Name="ambientePasillos" ID="{76C09648-A7B3-4D9E-851C-F92EF6DE8B16}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="electricidada_01" ID="{960E94D3-1DCD-4C67-A7D4-D65CAA29FC36}" ShortID="66766214">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="ElectricalPositioning" ID="{74F4F3C7-BD25-4137-A965-6B1B48BF7C6C}" WorkUnitID="{FAC99901-AE62-4C26-B26B-1CF05986EE3B}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5A0F21F-2C60-4B7B-9715-74CEE98AA26E}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ED09DB73-D2AE-48CD-9176-834CB68201A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="electricidada_01" ID="{93A651D3-A570-4EB7-9089-1B7A168D108F}">
+							<PropertyList>
+								<Property Name="CrossfadeDuration" Type="Real64" Value="1500"/>
+								<Property Name="FadeInDuration" Type="Real64" Value="2.46860398848684"/>
+								<Property Name="LoopBegin" Type="Real64" Value="4.56317706962719"/>
+								<Property Name="LoopEnd" Type="Real64" Value="53.7856444764254"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>electricidada_01.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="464318873"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="electricidada_01" ID="{93A651D3-A570-4EB7-9089-1B7A168D108F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="electricidada_02" ID="{D383E9E9-A208-4983-8B34-8C7934AFCFD7}" ShortID="775533342">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="ElectricalPositioning" ID="{74F4F3C7-BD25-4137-A965-6B1B48BF7C6C}" WorkUnitID="{FAC99901-AE62-4C26-B26B-1CF05986EE3B}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5A0F21F-2C60-4B7B-9715-74CEE98AA26E}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ED09DB73-D2AE-48CD-9176-834CB68201A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="electricidada_02" ID="{4B4AAF85-18A3-4164-A67A-C5B145490690}">
+							<PropertyList>
+								<Property Name="CrossfadeDuration" Type="Real64" Value="600"/>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.850297560307013"/>
+								<Property Name="LoopBegin" Type="Real64" Value="44.2154731359649"/>
+								<Property Name="LoopEnd" Type="Real64" Value="62.4968706825658"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="42.0046994791667"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>electricidada_02.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="65104089"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="electricidada_02" ID="{4B4AAF85-18A3-4164-A67A-C5B145490690}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 				<Sound Name="BallBounce" ID="{6B697CD3-1AA7-47C7-A18E-703C8FA6B4D2}" ShortID="546443224">
 					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{6DCC7BE5-F483-49E8-9FDD-A6BD4CA43762}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="707"/>
+											<Property Name="Min" Type="Real64" Value="-1541"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-20</Value>
-							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
 									<Modifier Name="" ID="{A69CB27A-155B-428C-B8DC-0135874E0CFB}"/>
@@ -49,6 +130,9 @@
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="BallBounceAttenuation" ID="{E66BBEE1-1B00-4F99-AD73-CB8C10730FE0}" WorkUnitID="{FAC99901-AE62-4C26-B26B-1CF05986EE3B}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5A0F21F-2C60-4B7B-9715-74CEE98AA26E}"/>
 						</Reference>
@@ -65,74 +149,23 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{98E6AD9D-6CC1-4E29-9E0E-A4D25D7FEAF4}" ShortID="519668307">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+												<ObjectRef Name="Room_Medium" ID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 					<ActiveSourceList>
 						<ActiveSource Name="CuboIn" ID="{9DB7C797-398A-42C1-9F87-E6BCFC561A5A}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="electricidada_01" ID="{960E94D3-1DCD-4C67-A7D4-D65CAA29FC36}" ShortID="66766214">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5A0F21F-2C60-4B7B-9715-74CEE98AA26E}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ED09DB73-D2AE-48CD-9176-834CB68201A0}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="electricidada_01" ID="{93A651D3-A570-4EB7-9089-1B7A168D108F}">
-							<Language>SFX</Language>
-							<AudioFile>electricidada_01.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="464318873"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="electricidada_01" ID="{93A651D3-A570-4EB7-9089-1B7A168D108F}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="electricidada_02" ID="{D383E9E9-A208-4983-8B34-8C7934AFCFD7}" ShortID="775533342">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5A0F21F-2C60-4B7B-9715-74CEE98AA26E}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ED09DB73-D2AE-48CD-9176-834CB68201A0}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="electricidada_02" ID="{4B4AAF85-18A3-4164-A67A-C5B145490690}">
-							<Language>SFX</Language>
-							<AudioFile>electricidada_02.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="65104089"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="electricidada_02" ID="{4B4AAF85-18A3-4164-A67A-C5B145490690}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="electricidada_03" ID="{95F24E44-821D-4188-BA7D-45AC132143BF}" ShortID="1027289187">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5A0F21F-2C60-4B7B-9715-74CEE98AA26E}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ED09DB73-D2AE-48CD-9176-834CB68201A0}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="electricidada_03" ID="{2CECEC19-9799-4389-BC2E-9BB8F050F65C}">
-							<Language>SFX</Language>
-							<AudioFile>electricidada_03.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="336344601"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="electricidada_03" ID="{2CECEC19-9799-4389-BC2E-9BB8F050F65C}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

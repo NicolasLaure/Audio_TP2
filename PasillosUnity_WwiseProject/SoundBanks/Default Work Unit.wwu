@@ -6,7 +6,14 @@
 				<SoundBank Name="main" ID="{88974886-CEA0-4B72-83D6-7357CEB63673}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Ambiente" ID="{DFEFDA85-2857-41EC-9681-2C5559BB9220}" WorkUnitID="{D9C0475A-1EAA-46EF-B8D4-FE6838B6C00B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_VideoPlayerEffect" ID="{B3DD1A30-9EEE-4416-80C0-C5CCC4F5E5CC}" WorkUnitID="{D9C0475A-1EAA-46EF-B8D4-FE6838B6C00B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_ElectricalSound" ID="{34F7EC58-3934-4720-AB2E-98CBA6C7AF60}" WorkUnitID="{D9C0475A-1EAA-46EF-B8D4-FE6838B6C00B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_PlayerSteps" ID="{0B8B3E60-D67F-48B5-B4E4-F5C7A1A67906}" WorkUnitID="{D9C0475A-1EAA-46EF-B8D4-FE6838B6C00B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_PlayerCrouch" ID="{135415BA-EEE8-4921-B6A7-FA3860379243}" WorkUnitID="{D9C0475A-1EAA-46EF-B8D4-FE6838B6C00B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="BallBounce" ID="{3458708D-A523-4AD9-9AEA-08A8BBF70C24}" WorkUnitID="{D9C0475A-1EAA-46EF-B8D4-FE6838B6C00B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_PlayerJump" ID="{B096401E-867B-4CE4-9C55-6D638D5ED64D}" WorkUnitID="{D9C0475A-1EAA-46EF-B8D4-FE6838B6C00B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_PlayerSteps" ID="{FCF53638-6A32-4E8E-A01F-E080B337C9EE}" WorkUnitID="{D9C0475A-1EAA-46EF-B8D4-FE6838B6C00B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Landing" ID="{331C8A7E-1DD6-4FB1-B8B4-F5E7462A11AB}" WorkUnitID="{D9C0475A-1EAA-46EF-B8D4-FE6838B6C00B}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

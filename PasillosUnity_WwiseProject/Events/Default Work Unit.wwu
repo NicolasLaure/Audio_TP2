@@ -25,6 +25,86 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_PlayerJump" ID="{B096401E-867B-4CE4-9C55-6D638D5ED64D}">
+					<ChildrenList>
+						<Action Name="" ID="{487C691E-B72B-4124-8181-5858FBD3D6CD}" ShortID="946202552">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RandomJump" ID="{D56A1938-DC31-419D-98CC-C83FD14AAA27}" WorkUnitID="{6F8ADA56-8F1E-4E58-AC5F-79E2B8338308}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PlayerCrouch" ID="{135415BA-EEE8-4921-B6A7-FA3860379243}">
+					<ChildrenList>
+						<Action Name="" ID="{33E00B2A-5FFA-4AA9-A4DF-9E4DB6F97F0F}" ShortID="686434933">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RandomCrouch" ID="{1D7A0685-DACB-4193-8B68-4151F8D17589}" WorkUnitID="{6F8ADA56-8F1E-4E58-AC5F-79E2B8338308}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PlayerSteps" ID="{FCF53638-6A32-4E8E-A01F-E080B337C9EE}">
+					<ChildrenList>
+						<Action Name="" ID="{46FD9AA7-4516-4D5D-AD02-4D281FBD43CD}" ShortID="427799407">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Steps" ID="{935803C5-F3E7-45BB-AE01-44779351D264}" WorkUnitID="{6F8ADA56-8F1E-4E58-AC5F-79E2B8338308}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Landing" ID="{331C8A7E-1DD6-4FB1-B8B4-F5E7462A11AB}">
+					<ChildrenList>
+						<Action Name="" ID="{792BC00C-A354-41E2-92E8-CB835765071B}" ShortID="50163512">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RandomLandings" ID="{CDA218FA-F5A9-4FE0-811B-5FA7CBFCA11B}" WorkUnitID="{6F8ADA56-8F1E-4E58-AC5F-79E2B8338308}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_PlayerSteps" ID="{0B8B3E60-D67F-48B5-B4E4-F5C7A1A67906}">
+					<ChildrenList>
+						<Action Name="" ID="{8E75E01B-CAD4-4DB0-BA4B-2FD8B7BE29D0}" ShortID="249939888">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Steps" ID="{935803C5-F3E7-45BB-AE01-44779351D264}" WorkUnitID="{6F8ADA56-8F1E-4E58-AC5F-79E2B8338308}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ElectricalSound" ID="{34F7EC58-3934-4720-AB2E-98CBA6C7AF60}">
+					<ChildrenList>
+						<Action Name="" ID="{294E5D29-8E16-4EA5-9DD7-C2C45AE41A2D}" ShortID="1053902661">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="electricidada_02" ID="{D383E9E9-A208-4983-8B34-8C7934AFCFD7}" WorkUnitID="{531BD1ED-C09A-49A3-990C-E53880CDC487}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_VideoPlayerEffect" ID="{B3DD1A30-9EEE-4416-80C0-C5CCC4F5E5CC}">
+					<ChildrenList>
+						<Action Name="" ID="{6265864E-C2E1-4A31-8A57-8E3C2C47FD80}" ShortID="1007249462">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="electricidada_01" ID="{960E94D3-1DCD-4C67-A7D4-D65CAA29FC36}" WorkUnitID="{531BD1ED-C09A-49A3-990C-E53880CDC487}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
